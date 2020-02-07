@@ -32,6 +32,7 @@
         <div class="leftcol">
           <!-- first row left column content here -->
           <h2 class="monospace">Flavors</h2>
+          <div class="sanserif">
           <head>
 <meta charset="utf-8">
 <title>Array of Magic</title>
@@ -61,58 +62,6 @@ document.getElementById('outputSumDiv').innerHTML = sumOfEnds;
 </script>
 </head>
 
-<body>
-<h1>Add First and Last Numbers of Array</h1>
-<button type="button" onclick="doProc()">Add</button>
-Array:
-<div id="outputArrDiv"></div>
-Sum of Ends:
-<div id="outputSumDiv"></div>
-</body>
-
-</html>
-<!DOCTYPE HTML>
-<html lang="en-us">
-<head>
-<meta charset="utf-8">
-<title>What to wear?</title>
-
-<script>
-/* Input: Workout
-* Processing: Decide what footwear to use
-* Output: Footwear
-*/
-function footlit() {
-var weather = document.getElementById('footInputBox').value;
-var footwear = "shoes";
-
-if (weather == "running") 
-{
-footwear = "running shoes";
-}
-else if (weather == "crossfit")
-{
-footwear = "metcons";
-}
-else if (weather == "football") 
-{
-footwear = "cleats";
-}
-else 
-{
-footwear = "shoes";
-}
-document.getElementById('footDiv').innerHTML = ("You should wear " + footwear + " and good luck.");
-}
-</script>
-</head>
-
-<body>
-What workout will you do today? : <input type="text" id="footInputBox">
-<button type="button" onclick="footlit()">Help me decide</button>
-<div id="footDiv"></div>
-</body>
-          <div class="sanserif">
           <p class="bluecolor"> A list of my most popular and requested flavors! Not seeing what you are looking for? Any cake can be customized to fit you needs.<br> Let us know in the contact us tab what you are looking for and we will make it.</p>
           </div>
         </div>
