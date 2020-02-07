@@ -1,0 +1,137 @@
+ h1,h2,h3,h4,h5,h6 {
+  color: #f15025;
+} 
+img {
+  max-width: 100%;
+}
+nav {
+  background-color: gray;
+}
+nav a {
+  color: #fbfbfc;
+  a:hover { color: green; }
+  padding: 1em .6em;
+  line-height: 3em;
+} 
+#top-row, #middle-row, #footer, #logo, #third-row {
+  display: flex;
+  flex-flow: row wrap;
+}
+#top-row {
+  background-color: #c2fcf7;
+  padding: 15px;
+  align-items: center;
+  text-align: center;
+}
+.bluecolor {
+  color: #e88873;
+  padding: 15px;
+}
+.blackcolor {
+  color: #e88873;
+  padding: 15px 15px 15px 15px;
+  margin-top: -50px;
+}
+#middle-row {
+  background-color: #e88873;
+  padding: 15px;
+  align-items: center;
+  text-align: center;
+}
+.pinkcolor {
+  color: #fbfbfc;
+  padding: 15px;
+}
+#bottom-row {
+  background-color: #c2fcf7;
+  text-align: center;
+  padding: 15px;
+}
+.footercolor {
+  color: #e88873;
+  padding: 15px;
+  height: auto;
+} 
+#content {
+  width: 100%;
+  margin: 0 auto;
+  align-items: center;
+}
+#footer {
+  background-color: #e88873;
+  padding: 30px;
+  align-items: center;
+  text-align: left;
+  height: 55px;
+}
+#logo {
+  font-size: 1.2em;
+  line-height: 3em;
+  margin-top: -115px;
+  padding: 0px 0px 0px 210px;
+  position: relative;
+  align-items: center;
+}
+#cakelogo {
+  position: relative;
+  background-color: #c2fcf7;
+  width: 180px;
+  margin-left: 20px;
+}
+  .monospace {
+    font-family: "Courier new", courier, monospace;
+  }
+  .wordspace {
+    font-family: "Courier new", courier, monospace;
+    marin-top: -20px;
+  }
+  .sanserif {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  h2 {
+    font-size: 50px;
+    padding: 30px 0px 0px 15px;
+    margin: 0px;
+  }
+  p {
+    font-size: 1.2em;
+    margin: 0px;
+  }
+  li {
+    font-size: 1.1em;
+    padding: 5px;
+    list-style-type: none;
+  }
+  img {
+    max-width: 100%;
+  }
+  .fullwidth {
+    width: 100%;
+  }
+  .leftcol {
+    width: 48%;
+    flex: 1 0 15em;
+  }
+  .rightcol {
+    width: 48%;
+    flex: 1 0 15em;
+  }
+  .justleft {
+    width: 48%;
+    flex: 1 0 15em;
+    text-align: left;
+  }
+  .justright {
+    width: 48%;
+    flex: 1 0 15em;
+    float: right;
+  }
+a:hover {
+  color: purple;
+}
+#third-row {
+  background-color: #e88873;
+  padding: 15px;
+  align-items: center;
+  text-align: center;
+}
