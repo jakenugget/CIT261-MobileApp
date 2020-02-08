@@ -1,102 +1,246 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>CarrotTopCakery | Flavors & Pricelist</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="/styles.css" />
-  </head>
 
-  <body>
-    <div id="content">
-      <header>
+<head>
+    <title>Jacob Verde CIT261 | JavaScript</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+  <div id="content">
+    <header>
         <div id="cakelogo">
-          <img
-            src="https://cdn.glitch.com/95fc067f-b2c1-4fab-abde-ec108eb40949%2Fdownload%20(1).png?v=1570912822096"
-            alt="Carrot Top Cakery Logo"
-          />
+        <img src="" alt="">
         </div>
         <nav>
           <div class="sanserif">
             <ul id="logo">
-              <li><a href="index.html">JavaScript</a></li>
-              <li><a href="flavors.html">JavaScript Objects</a></li>
-              <li><a href="gallery.html">JSON</a></li>
-              <li><a href="index.html">AJAX</a></li>
-              <li><a href="aboutme.html">Local Storage</a></li>
+                <li><a href="index.html">JavaScript</a></li>
+                <li><a href="flavors.html">JavaScript Objects</a></li>
+                <li><a href="gallery.html">JSON</a></li>
+                <li><a href="index.html">AJAX</a></li>
+                <li><a href="aboutme.html">Local Storage</a></li>
             </ul>
           </div>
         </nav>
-      </header>
-      <main>
-        <section id="middle-row">
-          <div class="leftcol">
-            <!-- first row left column content here -->
-            <h2 class="monospace">Flavors</h2>
-            <div class="sanserif">
-              <p class="pinkcolor">
-                A list of my most popular and requested flavors! Contact me if
-                you would like other flavors or to schedule a taste test
-                appointment.
-              </p>
-            </div>
-          </div>
-          <div class="rightcol">
-            <!-- first row right column content here -->
-            <img
-              src="https://cdn.glitch.com/95fc067f-b2c1-4fab-abde-ec108eb40949%2FFlavorscolor.PNG?v=1571937736958"
-              alt="Wedding Cake"
-            />
-          </div>
-        </section>
-        <section id="top-row">
-          <div class="leftcol">
-            <!-- second row left column content here -->
-            <img
-              src="https://cdn.glitch.com/95fc067f-b2c1-4fab-abde-ec108eb40949%2FPricelist.jpg?v=1571937734268"
-              alt="Novelty Cake"
-            />
-          </div>
-          <div class="rightcol">
-            <!-- second row right column content here -->
-            <h2 class="monospace">Pricelist</h2>
-            <div class="sanserif">
-              <p class="bluecolor">
-                These are our most common size wedding cakes, Approximately how
-                many people it will serve and Price for a Buttercream or Fondant
-                Cake.
-              </p>
-            </div>
-          </div>
-        </section>
-      </main>
-      <footer>
-        <section id="footer">
-          <div class="justleft">
-            <p class="sanserif">&copy; 2019 Carrot Top Cakery</p>
-          </div>
-          <div>
-            <!-- Currently client only has 2 social media profiles so the third is just going back to instagram-->
-            <a target="_blank" href="https://www.instagram.com/carrottopcakery/"
-              ><img
-                src="https://cdn.glitch.com/95fc067f-b2c1-4fab-abde-ec108eb40949%2Finstagram%20(1).png?v=1570125664111"
-                alt="Instagram icon"
-            /></a>
-            <a
-              target="_blank"
-              href="https://www.facebook.com/carrottopcakery-111723660178641"
-              ><img
-                src="https://cdn.glitch.com/95fc067f-b2c1-4fab-abde-ec108eb40949%2Ffacebook%20(1).png?v=1570125610553"
-                alt="Facebook icon"
-            /></a>
-            <a target="_blank" href="https://www.instagram.com/carrottopcakery/"
-              ><img
-                src="https://cdn.glitch.com/95fc067f-b2c1-4fab-abde-ec108eb40949%2Fyoutube.png?v=1570125937114"
-                alt="Youtube icon"
-            /></a>
-          </div>
-        </section>
-      </footer>
-    </div>
-  </body>
+    </header>
+    <main>
+<h1>JavaScript</h1>
+<script>
+function addEnds(list) {
+var last = list.length - 1;
+
+return list[0] + list[last];
+}
+function doProc() {
+
+var listLength = Math.floor(Math.random() * 99) + 1 ;
+var list = new Array(listLength);
+
+for (var index = 0; index < listLength; index++) {
+list[index] = Math.floor(Math.random() * 99);
+}
+
+var sumOfEnds = addEnds(list);
+
+document.getElementById('outputArrDiv').innerHTML = list;
+
+document.getElementById('outputSumDiv').innerHTML = sumOfEnds;
+}
+
+</script>
+</head>
+
+<body>
+<h1>Add First and Last Numbers of Array</h1>
+<button type="button" onclick="doProc()">Add</button>
+Array:
+<div id="outputArrDiv"></div>
+Sum of Ends:
+<div id="outputSumDiv"></div>
+</body>
+
+</html>
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>What to wear?</title>
+
+<script>
+/* Input: Workout
+* Processing: Decide what footwear to use
+* Output: Footwear
+*/
+function footlit() {
+var weather = document.getElementById('footInputBox').value;
+var footwear = "shoes";
+
+if (weather == "running") 
+{
+footwear = "running shoes";
+}
+else if (weather == "crossfit")
+{
+footwear = "metcons";
+}
+else if (weather == "football") 
+{
+footwear = "cleats";
+}
+else 
+{
+footwear = "shoes";
+}
+document.getElementById('footDiv').innerHTML = ("You should wear " + footwear + " and good luck.");
+}
+</script>
+</head>
+
+<body>
+What workout will you do today? : <input type="text" id="footInputBox">
+<button type="button" onclick="footlit()">Help me decide</button>
+<div id="footDiv"></div>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>DragonBall Super</h2>
+
+<p>Ten Fighters of the Tournament of Power.</p>
+
+<script>
+var dbz = ['Goku', 'Vegeta', 'Gohan', 'Freiza', 'Krillin', 'Master Roshi', 'Tien', 'Android 17', 'Android 18', 'Piccolo'];
+var z;
+
+for (z of dbz) {
+  document.write(z + "<br >");
+}
+</script>
+
+</body>
+</html>
+
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>Calculate 1000 Pound Club</title>
+
+<script>
+/* Input: Bench, Squat and Deadlift
+ * Processing: Add the Numbers
+ * Output: Sum of Numbers
+ */
+function swolelit() {
+    // Read a measurement.
+    var text1 = document.getElementById('bench1InputBox').value;
+    var text2 = document.getElementById('squat2InputBox').value;
+    var text3 = document.getElementById('dead3InputBox').value;
+
+    // Convert what the user typed from text into a number.
+    var w = parseFloat(text1);
+    var l = parseFloat(text2);
+    var z = parseFloat(text3);
+
+    // Convert the measurement to acres.
+    var a = w + l + z;
+
+    // Display the Acres to the user.
+    document.getElementById('swoleDiv').innerHTML = a + " Pounds " ;
+}
+</script>
+</head>
+
+<body>                               
+Enter your Bench: <input type="text1" id="bench1InputBox">
+Enter your Squat: <input type="text2" id="squat2InputBox">
+Enter your Deadlift: <input type="text3" id="dead3InputBox">
+<button type="button" onclick="swolelit()">Convert</button>
+<div id="swoleDiv"></div>                     
+</body>            
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Are you worthy:</p>
+<p id="demo"></p>
+
+<script>
+function sumAll() {
+  var i;
+  var sum = 0;
+  for(i = 0; i < arguments.length; i++) {
+    sum += arguments[i];
+  }
+  return sum;
+}
+document.getElementById("demo").innerHTML = sumAll(500, 400, 300);
+
+</script>
+<p>Welcome to the 1000 pound club!</p>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
+      
+<script type = "text/javascript">
+<!--
+var count = 1;
+document.write("Hide and Seek <br />");
+         
+while (count < 11) {
+document.write(count + " Mississipi" + "<br />");
+count++;
+}
+         
+document.write("Ready or Not Here I Come!");
+</script>
+      
+<p>I miss the good ol' days as kids!</p>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<h2>Powering Up</h2>
+
+<p id="Power up"></p>
+
+<script>
+var person = ["Saiyan", "Super Saiyan", "Super Saiyan 2", "Super Saiyan 3"];
+document.getElementById("Power up").innerHTML =
+person[1] + " " + person.length;
+</script>
+
+</head>
+<body>
+
+</body>
+</html>
+
+    </main>
+    <footer>
+      <section id="footer">
+        <div class="justleft">
+          <p class="sanserif">Jacob Verde Cit261</p> 
+        </div>
+        <div>
+
+        </div>
+      </section>
+    </footer>
+  </div>  
+</body>
 </html>
