@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Jacob Verde CIT261 | Local Storage</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+  <div id="content">
+    <header>
+        <div id="cakelogo">
+        <img src="" alt="">
+        </div>
+        <nav>
+          <div class="sanserif">
+            <ul id="logo">
+                <li><a href="index.html">JavaScript</a></li>
+                <li><a href="flavors.html">JavaScript Objects</a></li>
+                <li><a href="gallery.html">JSON</a></li>
+                <li><a href="ajax.html">AJAX</a></li>
+                <li><a href="localstorage.html">Local Storage</a></li>
+            </ul>
+          </div>
+        </nav>
+    </header>
+    <main>
+<h1>Local Storage</h1>
+
+<div id="How"></div>
+<div id="much"></div>
+<div id="wood"></div>
+<div id="names"></div>
+<div id="car"></div>
+<div id="course"></div>
+
+<script>
+var names = ["Jan", "Tif", "Mark", "Chuck", "Olan"];
+var course = "CIT 261 Section 2 Winter 2017";
+var car = {make:"Honda", model:"Odyssey", year:"2012", color:"white"};
+localStorage.setItem("names", JSON.stringify(names));
+localStorage.setItem("car", JSON.stringify(car));
+localStorage.setItem("course", course); 
+// Check browser support
+if (typeof(Storage) !== "undefined") {
+  // Store
+  localStorage.setItem("How", "How much wood,");
+  localStorage.setItem("much", "would a wood chuck, chuck");
+  localStorage.setItem("wood", "if a wood chuck could chuck wood?");
+  // Retrieve
+  document.getElementById("names").innerHTML = localStorage.getItem("names");
+  document.getElementById("car").innerHTML = localStorage.getItem("car");
+  document.getElementById("course").innerHTML = localStorage.getItem("course");
+  document.getElementById("How").innerHTML = localStorage.getItem("How");
+  document.getElementById("much").innerHTML = localStorage.getItem("much");
+  document.getElementById("wood").innerHTML = localStorage.getItem("wood");
+} else {
+  document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
+}
+</script>
+
+
+    </main>
+    <footer>
+      <section id="footer">
+        <div class="justleft">
+          <p class="sanserif">Jacob Verde Cit261</p> 
+        </div>
+        <div>
+
+        </div>
+      </section>
+    </footer>
+  </div>  
+</body>
+</html>
