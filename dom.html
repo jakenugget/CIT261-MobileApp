@@ -28,8 +28,31 @@
         </nav>
     </header>
     <main>
-<h1>JavaScript</h1>
+<h1>DOM</h1>
+<div id="abra">
+<p id="p1">You can't see it.</p>
+<p id="p2">But, there use to be a line right after this in the blank spot.</p>
+</div>
+<div id="kadabra">
+<p id="poof">Now you see me, now you don't.</p>
+<p id="p2"><br>Kinda like the Thanos snap.</p>
+</div>
 
+<script>
+var starlord = document.createElement("anything");
+var gamora = document.createTextNode("Guardians of the Galaxy... ");
+var rocket = document.createTextNode("Is the best marvel film ever made.");
+starlord.appendChild(gamora);
+starlord.appendChild(rocket);
+
+var drax = document.getElementById("abra");
+var groot = document.getElementById("p1");
+drax.insertBefore(starlord,groot);
+
+var thanos = document.getElementById("kadabra");
+var ronan = document.getElementById("poof");
+thanos.removeChild(ronan);
+</script>
 
     </main>
     <footer>
