@@ -35,13 +35,13 @@
 </div>
 <div id="kadabra">
 <p id="poof">Now you see me, now you don't.</p>
-<p id="p2"><br>Kinda like the Thanos snap.</p>
+<p id="p2"><br>Because of removeChild it is no longer there.</p>
 </div>
 
 <script>
 var starlord = document.createElement("anything");
-var gamora = document.createTextNode("Guardians of the Galaxy... ");
-var rocket = document.createTextNode("Is the best marvel film ever made.");
+var gamora = document.createTextNode("This is an example of createElement, appendChild, insertBefore and removeChild.");
+var rocket = document.createTextNode(" As well as getElementById and createTextNode.");
 starlord.appendChild(gamora);
 starlord.appendChild(rocket);
 
