@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Jacob Verde CIT261 | CSS3 Transitions</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/script.js" defer></script>
+
+    <ul id="logo">
+      <li><a href="index.html">JavaScript</a></li>
+      <li><a href="javascriptobjects.html">JavaScript Objects</a></li>
+      <li><a href="json.html">JSON</a></li>
+      <li><a href="ajax.html">AJAX</a></li>
+      <li><a href="localstorage.html">Local Storage</a></li>
+      <li><a href="dom.html">DOM</a></li>
+    </ul>
+  </head>
+  <body>
+    <h1>CSS3 Transitions and Animations</h1>
+<p>
+  The Dizzy ball is using javascript in a seperate .js file.
+    </p>
+    <p>
+  The gains button is using javascript in the HTML file.
+    </p>
+    <div class="start">
+      <div class="box" onclick="updateTransition()">Dizzy</div>
+    </div>
+  </body>
+  <footer>
+    <button id="big">Gains</button>
+
+    <script>
+      big.onclick = function() {
+        this.style.fontSize = "70px";
+        this.style.color = "red";
+        this.style.backgroundColor = "blue";
+      };
+    </script>
+    <section id="footer">
+      <div class="justleft">
+        <p class="sanserif">Jacob Verde Cit261</p>
+      </div>
+    </section>
+  </footer>
+</html>
