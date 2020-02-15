@@ -29,6 +29,18 @@
     <div class="start">
       <div class="box" onclick="updateTransition()">Dizzy</div>
     </div>
+    function updateTransition() {
+  var el = document.querySelector("div.box");
+
+  if (el) {
+    el.className = "box1";
+  } else {
+    el = document.querySelector("div.box1");
+    el.className = "box";
+  }
+
+  return el;
+}
   </body>
   <footer>
     <button id="big">Gains</button>
