@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Jacob Verde CIT261 | Manipulating CSS</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<div id="content">
+    <header>
+        <div id="cakelogo">
+        <img src="" alt="">
+        </div>
+        <nav>
+          <div class="sanserif">
+            <ul id="logo">
+                <li><a href="index.html">JavaScript</a></li>
+                <li><a href="javascriptobjects.html">JavaScript Objects</a></li>
+                <li><a href="json.html">JSON</a></li>
+                <li><a href="ajax.html">AJAX</a></li>
+                <li><a href="localstorage.html">Local Storage</a></li>
+                <li><a href="dom.html">DOM</a></li>
+                <li><a href="manipulatingcss.html">Manipulating CSS</a></li>
+                <li><a href="css3transitions.html">CSS3 Transitions</a></li>
+            </ul>
+          </div>
+        </nav>
+    </header>
+    <main>
+<h1>Manipulating CSS</h1>
+
+<h1 id="pow">Click on a button to change this text</h1>
+
+<button type="button" 
+onclick="document.getElementById('pow').style.color = 'red'">
+Red</button>
+<button type="button" 
+onclick="document.getElementById('pow').style.color = 'blue'">
+Blue</button>
+<button type="button" 
+onclick="document.getElementById('pow').style.fontSize = '100px'">
+Larger</button>
+<button type="button" 
+onclick="document.getElementById('pow').style.fontSize = '32px'">
+Regular</button>
+<button type="button" 
+onclick="document.getElementById('pow').style.fontSize = '10px'">
+Smaller</button>
+<button type="button" 
+onclick="document.getElementById('pow').style.visibility = 'hidden'">
+Invisible</button>
+<button type="button" 
+onclick="document.getElementById('pow').style.visibility = 'visible'">
+Visible</button>
+<button type="button" 
+onclick="document.getElementById('pow').style.border = 'solid salmon'">
+Border</button>
+    </main>
+    <footer>
+      <section id="footer">
+        <div class="justleft">
+          <p class="sanserif">Jacob Verde Cit261</p> 
+        </div>
+        <div>
+        </div>
+      </section>
+    </footer>
+  </div>
+</body>
+</html>
