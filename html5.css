@@ -14,3 +14,7 @@
   height: 100%;
   width: 100%;
 }
+#myCanvas {
+  border: 1px solid black;
+  background-color: pink;
+}
