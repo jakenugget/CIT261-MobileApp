@@ -135,3 +135,14 @@ a:hover {
   align-items: center;
   text-align: center;
 }
+#JSE {
+  width: 100px;
+  height: 100px;
+  background: red;
+  -webkit-transition: width 2s;
+  transition: width 2s;
+}
+
+#JSE:hover {
+  width: 400px;
+}
