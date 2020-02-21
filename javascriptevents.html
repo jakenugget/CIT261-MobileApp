@@ -1,74 +1,78 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>JavaScript Events</title>
-        
-        <style> 
-            /*Example from https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_transitionend*/
-            #myDIV {
-                width: 100px;
-                height: 100px;
-                background: red;
-                -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
-                transition: width 2s;
-            }
-
-            #myDIV:hover {
-                width: 400px;
-            }
-        </style>
-    </head>
-    <body>
-        <a href="index.php">Back to Topics</a>
-        <br>
-        <h1>Standard JavaScript Events Including those for Mobile Devices (Ex. onTouchBegin, onLoad, etc.) and Animation and Transition EventsParse and Stringify</h1>
-        <div>Here are several examples of using each of the above features of JS Events.</div>
-        <br>
-        <span>On Change Example</span>
-        <select onchange="color(this)">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-        </select>
-        <br><br>
-        <span>On Focus and on Blur</span>
-        <input type="text" onfocus="this.style.borderColor = 'red';" onblur="this.style.borderColor = 'lightgreen'">
-        
-        <br><br>
-        
-        <span>Transition end example</span>
-        <div id="myDIV" onmouseover="this.innerHTML = ''; this.style.backgroundColor = 'red';" onmouseout="this.innerHTML = ''; this.style.backgroundColor = 'red';"></div>
-        
-        <br><br>
-        <span>OnClick example</span>
-        <button onclick="alert('You clicked the button!')">Click Me!</button>
+  <head>
+    <title>Jacob Verde CIT261 | JavaScript Events</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <header>
+    <nav>
+      <div class="sanserif">
+        <ul id="logo">
+          <li><a href="index.html">JavaScript</a></li>
+          <li><a href="javascriptobjects.html">JavaScript Objects</a></li>
+          <li><a href="json.html">JSON</a></li>
+          <li><a href="ajax.html">AJAX</a></li>
+          <li><a href="localstorage.html">Local Storage</a></li>
+          <li><a href="dom.html">DOM</a></li>
+          <li><a href="manipulatingcss.html">Manipulating CSS</a></li>
+          <li><a href="css3transitions.html">CSS3 Transitions</a></li>
+          <li><a href="html5tags.html">HTML5 Tags</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <body>
+    <h1>JavaScript Events</h1>
+    <h3>onChange Example</h3>
+    <select onchange="color(this)">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+    </select>
+    <h3>onFocus and onBlur</h3>
+    <input
+      type="text"
+      onfocus="this.style.backgroundColor = 'blue';"
+      onblur="this.style.backgroundColor = 'orange'"
+    />
+    <h3>Transition end example</h3>
+    <div
+      id="JSE"
+      onmouseover="this.innerHTML = ''; this.style.backgroundColor = 'red';"
+      onmouseout="this.innerHTML = ''; this.style.backgroundColor = 'red';"
+    ></div>
+    <h3>onClick example</h3>
+    <button onclick="alert('This was an example of onClick!')">onClick Me!</button>
     <script>
-       function color(option){
-           if (option.value == 1){
-               option.style.color = "black";
-               option.style.backgroundColor = "yellow";
-           }
-           else if (option.value == 2){
-               option.style.color = "white";
-               option.style.backgroundColor = "green";
-           }
-           else if (option.value == 3){
-               option.style.color = "white";
-               option.style.backgroundColor = "red";
-           }
-       }
-       
-       //Example from https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_transitionend
-       // Code for Safari 3.1 to 6.0
-        document.getElementById("myDIV").addEventListener("webkitTransitionEnd", myFunction);
-
-        // Standard syntax
-        document.getElementById("myDIV").addEventListener("transitionend", myFunction);
-
-        function myFunction() {
-            this.innerHTML = "transitionend event occured - The transition has completed";
-            this.style.backgroundColor = "pink";
+      function color(option) {
+        if (option.value == 1) {
+          option.style.color = "black";
+          option.style.backgroundColor = "yellow";
+        } else if (option.value == 2) {
+          option.style.color = "pink";
+          option.style.backgroundColor = "purple";
+        } else if (option.value == 3) {
+          option.style.color = "orange";
+          option.style.backgroundColor = "blue";
         }
+      }
+
+      document
+        .getElementById("JSE")
+        .addEventListener("webkitTransitionEnd", trans);
+
+      // Standard syntax
+      document
+        .getElementById("JSE")
+        .addEventListener("transitionend", trans);
+
+      function trans() {
+        this.innerHTML =
+          "This was a transition event and it's finished.";
+        this.style.backgroundColor = "cyan";
+      }
     </script>
-    </body>
+  </body>
 </html>
