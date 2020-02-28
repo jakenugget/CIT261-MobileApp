@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jacob Verde CIT261 | CSS3 Transitions</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">JavaScript</a></li>
+          <li><a href="javascriptobjects.html">JavaScript Objects</a></li>
+          <li><a href="json.html">JSON</a></li>
+          <li><a href="ajax.html">AJAX</a></li>
+          <li><a href="localstorage.html">Local Storage</a></li>
+          <li><a href="dom.html">DOM</a></li>
+          <li><a href="manipulatingcss.html">Manipulating CSS</a></li>
+          <li><a href="css3transitions.html">CSS3 Transitions</a></li>
+          <li><a href="javascriptevents.html">JavaScript Events</a></li>
+          <li><a href="html5tags.html">HTML5 Tags</a></li>
+          <li><a href="triggercss3transitions.html">Trigger CSS3 Transitions</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <p>This top menu is using transition-property: border, color when it is hovered over.</p>
+      <h1>CSS3 Transitions</h1>
+      <head>
+        <style>
+          div {
+            width: 100px;
+            height: 100px;
+            background: teal;
+            transition: width 2s;
+          }
+
+          #linear {
+            transition-timing-function: linear;
+            transition-delay: 1s;
+          }
+          #ease {
+            transition-timing-function: ease;
+          }
+          #ease-in {
+            transition-timing-function: ease-in;
+            transition: width 5s;
+          }
+          #ease-out {
+            transition-timing-function: ease-out;
+            background: blue;
+            color: white;
+          }
+          #ease-in-out {
+            transition-timing-function: ease-in-out;
+            height: 200px;
+          }
+
+          div:hover {
+            width: 300px;
+            color: yellow;
+            border-bottom: 5px solid magenta;
+          }
+        </style>
+      </head>
+      <body>
+        <p>Hover over each one to see different transitions</p>
+
+        <div id="linear">Linear w/ 1 second delay</div>
+        <br />
+        <div id="ease">Just "Ease"</div>
+        <br />
+        <div id="ease-in">Ease-in w/ transition of 5 seconds</div>
+        <br />
+        <div id="ease-out">Just "Ease-out"</div>
+        <br />
+        <div id="ease-in-out">Just "Ease-in-out"</div>
+        <br />
+      </body>
+    </main>
+    <footer>
+      <section id="footer">
+        <p class="sanserif">Jacob Verde CIT261</p>
+      </section>
+    </footer>
+  </body>
+</html>
