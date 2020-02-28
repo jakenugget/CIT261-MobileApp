@@ -50,28 +50,3 @@
  h1,h2,h3,h4,h5,h6 {
   color: #f15025;
 
-ul{
-  background-color:pink;
-  display:block;
-  overflow:auto;
-  padding-bottom:10px;
-  height:32px;
-}
-
-li {
-  transition-property: border, padding;
-  float:left;
-  padding: 10px;
-  list-style-type:none;
-  color: red;
-  cursor:pointer;
-  
-}
-
-li:hover {
-  transition-property: border, color;
-  border-bottom: 5px solid black;
-  transition-duration: 0.4s;
-  color: white;
-  
-}
