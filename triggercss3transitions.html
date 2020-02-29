@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Jacob Verde CIT261 | CSS3 Transitions</title>
+    <title>Jacob Verde CIT261 | Trigger CSS3 Transitions</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="style.css" />
@@ -21,12 +21,12 @@
           <li><a href="css3transitions.html">CSS3 Transitions</a></li>
           <li><a href="javascriptevents.html">JavaScript Events</a></li>
           <li><a href="html5tags.html">HTML5 Tags</a></li>
-          <li><a href="triggercss3transitions.html">Trigger CSS3 Transitions</a></li>
+          <li><a href="css3transitions.html">CSS3 Transitions</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <p>This top menu is using transition-property: border, color when it is hovered over.</p>
+    
       <h1>CSS3 Transitions</h1>
       <head>
         <style>
@@ -58,8 +58,29 @@
             height: 200px;
           }
 
-          div:hover {
+          #linear:hover {
             width: 300px;
+            color: yellow;
+            border-bottom: 5px solid magenta;
+          }
+          #ease:hover {
+            width: 300px;
+            color: yellow;
+            border-bottom: 5px solid magenta;
+          }
+          #ease-in:hover {
+            width: 300px;
+            color: yellow;
+            border-bottom: 5px solid magenta;
+          }
+          #ease-out:hover {
+            width: 300px;
+            color: black;
+            background: yellow;
+            border-bottom: 5px solid magenta;
+          }
+          #ease-in-out:hover {
+            width: 400px;
             color: yellow;
             border-bottom: 5px solid magenta;
           }
