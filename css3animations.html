@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jacob Verde CIT261 | CSS3 Animations</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">JavaScript</a></li>
+          <li><a href="javascriptobjects.html">JavaScript Objects</a></li>
+          <li><a href="json.html">JSON</a></li>
+          <li><a href="ajax.html">AJAX</a></li>
+          <li><a href="localstorage.html">Local Storage</a></li>
+          <li><a href="dom.html">DOM</a></li>
+          <li><a href="manipulatingcss.html">Manipulating CSS</a></li>
+          <li><a href="css3transitions.html">CSS3 Transitions</a></li>
+          <li><a href="javascriptevents.html">JavaScript Events</a></li>
+          <li><a href="html5tags.html">HTML5 Tags</a></li>
+          <li><a href="css3transitions.html">Trigger CSS3 Transitions</a></li>
+          <li><a href="css3transform.html">CSS3 Transform</a></li>
+          <li><a href="css3animation.html">CSS3 Animation</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>CSS3 Animations</h1>
+
+      <style>
+        .bball {
+          width: 110px;
+          height: 110px;
+          background-color: red;
+          position: relative;
+          animation-name: ball;
+          animation-duration: 3s;
+          animation-iteration-count: infinite;
+          border-radius: 125px;
+          text-align: center;
+          padding: 20px;
+        }
+
+        @keyframes ball {
+          0% {
+            background-color: red;
+            color: blue;
+            left: 0px;
+            top: 0px;
+          }
+          50% {
+            background-color: green;
+            color: yellow;
+            left: 0px;
+            top: 400px;
+          }
+          100% {
+            background-color: red;
+            color: darkblue;
+            left: 0px;
+            top: 0px;
+          }
+        }
+
+      </style>
+    </main>
+
+    <div class="bball">
+      Bounce... <br />
+      Like a Basketball!
+    </div>
+    
+  </body>
+  <footer>
+    <section id="footer">
+      <p class="sanserif">Jacob Verde CIT261</p>
+    </section>
+  </footer>
+</html>
